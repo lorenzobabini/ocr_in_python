@@ -1,9 +1,3 @@
-## https://stackoverflow.com/questions/72062001/remove-everything-of-a-specific-color-with-a-color-variation-tolerance-from-an
-## see here the color range https://stackoverflow.com/questions/42592234/python-opencv-morphologyex-remove-specific-color
-## see he a converter https://docs.opencv.org/3.1.0/df/d9d/tutorial_py_colorspaces.html
-
-###https://cvexplained.wordpress.com/2020/04/28/color-detection-hsv/
-
 import cv2
 import numpy as np
 from pathlib import Path
