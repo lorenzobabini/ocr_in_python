@@ -21,7 +21,7 @@ This step could be useful to delete signs made with highlighters, colored pens o
 ![delete a color](https://github.com/user-attachments/assets/46b1aa3b-54af-40fa-92ae-f0e46a045274)
 
 #### 3. Binarizing
-Greyscale or black&white
+Converting images to greyscale or black&white could improve the efficiency of the OCR tools.
 
 #### 4. Cropping
 This techniques must be personalized, identifying the correct pixel measurements to crop. The goal is to split double scanned images or delete number of pages and heading titles in the margins of the book.
