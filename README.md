@@ -24,6 +24,8 @@ Greyscale or black&white
 
 #### 4. Cropping
 This techniques must be personalized, identifying the correct pixel measurements to crop. The goal is to split double scanned images or delete number of pages and heading titles in the margins of the book.
-![cropping](https://github.com/user-attachments/assets/ad8de0a0-d5dc-4712-933b-589a82fd64af)
+
+![cropping](https://github.com/user-attachments/assets/d083641f-6732-4e6d-bcc2-5c7aafb63e63)
+
 #### 5. Rotation
 Automatic rotation of pages based on an automatic measurements. If an image is not askew, it is not rotated.
