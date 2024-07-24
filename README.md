@@ -13,8 +13,8 @@ The example I used is a rare Italian book from the 1950s I have OCR'ed for a fri
 ## Requirements
 The project is created using **Python 3.7**.
 
-The software used are
-**Tesseract**\
+The software used are\
+**Tesseract** (see [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract))\
 **Poppler** (for [pdf2image library](https://github.com/Belval/pdf2image)).
 
 I recommend to add them to the environment variables of your OS; alternativale you have to specify their path in the code.
