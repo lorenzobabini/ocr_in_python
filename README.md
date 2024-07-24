@@ -49,3 +49,7 @@ This techniques must be personalized, identifying the correct pixel measurements
 Automatic rotation of pages based on an automatic measurements. If an image is not askew, it is not rotated.
 
 ![rotated](https://github.com/user-attachments/assets/2de8e10a-8054-4bb6-ba13-9f275f150f72)
+
+## OCR processing
+
+Here are different ways to OCR the preprocessed images.
