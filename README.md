@@ -11,7 +11,16 @@ All the steps of an hypothetic project workflow of OCRing an entire multi-page b
 The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book
 
 ## Requirements
-The project is created using Python 3.7. All used libraries:
+The project is created using **Python 3.7**.
+
+#### Softwares:
+**Tesseract**\
+**Poppler** (for [pdf2image library](https://github.com/Belval/pdf2image)).
+
+I recommend to add them to the environment variables of your OS; alternativale you have to specify their path in the code.
+
+
+All used libraries:
 
 #### for preprocessing
 pdf2image (1.16.0)\
