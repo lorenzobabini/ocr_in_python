@@ -5,10 +5,10 @@ from PIL import Image
 import pytesseract
 from pathlib import Path
 
-# To use Tesseract, in the Python code you must specify the path of tesseract.exe (or insert it in the system environment variables: https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+# To use Tesseract, in the Python code you must specify the path of tesseract.exe (or insert it in the system environment variables)
 ## that in the default installation options is normally saved in C:/Users/AppData/Local/Tesseract-OCR/tesseract.exe
 
-pytesseract.pytesseract.tesseract_cmd = 'tools/Tesseract-OCR/tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '' #insert yout Tesseract path
 
 # Here are three ways to customize the settings (engine modes, page segmentation modes or boths)
 custom_oem_config = r'--oem 3'
