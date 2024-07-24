@@ -1,7 +1,7 @@
 # OCR in Python
 Optical Character Recognition using Pytesseract or EasyOCR, along with preprocessing and postprocessing techniques. Following and adapting these scripts you can build an OCR workflow for your projects.
 
-Most tips and techniques are taken from these notebooks: https://github.com/ithaka/constellate-notebooks/tree/master/OCR  For further informations see them!
+Most tips and techniques are taken from [Constellate notebooks](https://github.com/ithaka/constellate-notebooks/tree/master/OCR) by Ithaka. For further informations see them!
 
 ## Workflow
 All the steps of an hypothetic project workflow of OCRing an entire multi-page book are here covered.
