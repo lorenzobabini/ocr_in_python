@@ -39,33 +39,32 @@ def rotation_angle(img):
     
     return float(best_angle)
 
-
-
 input_folder = Path("output/cropped")
 output_folder = Path("output/rotated")
 output_folder.mkdir(parents=True, exist_ok=True)
 
 i=0
-for image in input_folder.rglob('*.jpg'):
+for image in input_folder.iterdir():
+    if image.suffix == '.jpg':
 
-# Open the image file to rotate
-    img = Image.open(image)
+        # Open the image file to rotate
+        img = Image.open(image)
 
-## Use rotation_angle and find_score to determine angle
-    angle_1 = rotation_angle(img)
-    print(angle_1)
+        ## Use rotation_angle and find_score to determine angle
+        angle_1 = rotation_angle(img)
+        print(angle_1)
 
-### Rotating the image based on the best angle ###
+        ### Rotating the image based on the best angle ###
 
-# Rotate the image
-# expand = True expands the image size to keep all data, filling space with white pixels
-# PIL.Image.Resampling.BICUBIC chooses BICUBIC resampling, a more accurate form of
-# resampling than the default: Nearest Neighbors
-    im1 = img.rotate(angle_1, PIL.Image.Resampling.BICUBIC, expand = True)
+        # Rotate the image
+        # expand = True expands the image size to keep all data, filling space with white pixels
+        # PIL.Image.Resampling.BICUBIC chooses BICUBIC resampling, a more accurate form of
+        # resampling than the default: Nearest Neighbors
+        im1 = img.rotate(angle_1, PIL.Image.Resampling.BICUBIC, expand = True)
  
-# to save rotated image
-    im1.save(str(output_folder)+"/rotated_image_" + str(i).zfill(3)+".jpg")
+        # to save rotated image
+        im1.save(str(output_folder)+"/rotated_image_" + str(i).zfill(3)+".jpg")
 
-    i = i+1
+        i = i+1
 
 
