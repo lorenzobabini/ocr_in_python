@@ -10,6 +10,22 @@ All the steps of an hypothetic project workflow of OCRing an entire multi-page b
 
 The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book
 
+## Requirements
+The project is created using Python 3.7. All used libraries:
+#### for preprocessing
+pdf2image (1.16.0)
+numpy (1.21.6)
+opencv-python (
+pillow (9.1.0)
+scipy (1.7.3)
+
+#### for processing
+pytesseract (0.3.9)
+
+#### for postprocessing
+pandas (1.3.5)
+regex (2022.4.24)
+
 ## Preprocessing
 The first five scripts are preprocessing steps that can be individually run:
 
