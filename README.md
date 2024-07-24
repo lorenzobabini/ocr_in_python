@@ -12,18 +12,19 @@ The example I used is a rare Italian book from the 1950s I have OCR'ed for a fri
 
 ## Requirements
 The project is created using Python 3.7. All used libraries:
+
 #### for preprocessing
-pdf2image (1.16.0)
-numpy (1.21.6)
-opencv-python (
-pillow (9.1.0)
-scipy (1.7.3)
+pdf2image (1.16.0)\
+numpy (1.21.6)\
+opencv-python (4.6.0.66)\
+pillow (9.1.0)\
+scipy (1.7.3)\
 
 #### for processing
 pytesseract (0.3.9)
 
 #### for postprocessing
-pandas (1.3.5)
+pandas (1.3.5)\
 regex (2022.4.24)
 
 ## Preprocessing
