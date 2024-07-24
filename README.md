@@ -26,7 +26,7 @@ pdf2image (1.16.0)\
 numpy (1.21.6)\
 opencv-python (4.6.0.66)\
 pillow (9.1.0)\
-scipy (1.7.3)\
+scipy (1.7.3)
 
 #### for processing
 pytesseract (0.3.9)
@@ -60,7 +60,7 @@ Automatic rotation of pages based on an automatic measurements. If an image is n
 
 ## OCR processing
 
-Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we use Tesseract. These scripts differ only in output format.
+Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in output format.
 - 6A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain a different text file for each page of the scanned book. These multiple outputs will be very helpful for postprocessing tasks;
 - 6B is the most simple way to obtain a single output: a single text file from the whole scanned book withouth subdivions;/
 - 6C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections.
