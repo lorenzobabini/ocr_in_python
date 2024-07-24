@@ -10,7 +10,7 @@ All the steps of an hypothetic project workflow of OCRing an entire multi-page b
 
 The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book
 
-### Preprocessing
+## Preprocessing
 The first five scripts are preprocessing steps that can be individually run:
 
 #### 1. Converting a multipage pdf in multiple images
