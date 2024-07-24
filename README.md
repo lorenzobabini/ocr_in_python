@@ -67,3 +67,5 @@ Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we u
 
 ## Postprocessing
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
+
+The output is spellcheker_data.csv in the ouput folder.
