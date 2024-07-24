@@ -18,8 +18,8 @@ fileName = pdf_file.rsplit('/')[-1]
 fileName = fileName.rsplit('.')[0]
 
 # To use the Poppler, you must specify the path of the /bin folder in "convert_from_path" function
-#(or insert the path in the system environment variables: https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
-images = convert_from_path(pdf_file, poppler_path = r"tools/poppler-22.04.0/Library/bin")
+#(or insert the path in the system environment variables)
+# images = convert_from_path(pdf_file, poppler_path = r"") #insert poppler_path bin folder (ex. "tools/poppler-22.04.0/Library/bin")
 
 # This step saves images as files:
 ## For each PIL image object:
