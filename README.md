@@ -65,6 +65,11 @@ Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we u
 - 6B is the most simple way to obtain a single output: a single text file from the whole scanned book withouth subdivions. See file.txt in the output folder;
 - 6C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections. See file_paginated.txt in the output folder
 
+Since **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and much detailed outputs, I tried to use it instead of the more traditional Tesseract.
+For EasyOCR the requisites are higher, and you need a more updated Python version. I used Python 3.10.
+I think EasyOCR cannot replace the simple features of Tesseract, especially because the output is a nested detailed list with 3 items (bounding box, the text detected and confident level) and I don’t know how to obtain a simple text that maintains the original line division of the document. So I tried EasyOCR to obtain new outputs:
+
+
 ## Postprocessing
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
 
