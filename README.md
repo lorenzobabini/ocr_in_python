@@ -61,9 +61,9 @@ Automatic rotation of pages based on an automatic measurements. If an image is n
 ## OCR processing
 
 Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in output format.
-- 6A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain a different text file for each page of the scanned book. See the "texts" folder in the "output" folder. These multiple outputs will be very helpful for postprocessing tasks;
-- 6B is the most simple way to obtain a single output: a single text file from the whole scanned book withouth subdivions. See file.txt in the output folder;
-- 6C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections. See file_paginated.txt in the output folder
+- 7A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain a different text file for each page of the scanned book. See the "texts" folder in the "output" folder. These multiple outputs will be very helpful for postprocessing tasks;
+- 7B is the most simple way to obtain a single output: a single text file from the whole scanned book withouth subdivions. See file.txt in the output folder;
+- 7C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections. See file_paginated.txt in the output folder
 
 Since **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and much detailed outputs, I tried to use it instead of the more traditional Tesseract.
 For EasyOCR the requisites are higher, and you need a more updated Python version. I used Python 3.10.
