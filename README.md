@@ -58,6 +58,13 @@ Automatic rotation of pages based on an automatic measurements. If an image is n
 
 ![rotated](https://github.com/user-attachments/assets/2de8e10a-8054-4bb6-ba13-9f275f150f72)
 
+#### 6. Noise canceling
+
+Not only denoising, but contrast and brightness adjustments too. This step could be useful, but It has not been used in my project.
+
+![denoising](https://github.com/user-attachments/assets/6ea0a1c8-79d4-4581-8173-42a941f4155e)
+
+
 ## OCR processing
 
 Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in output format.
