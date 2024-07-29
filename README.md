@@ -78,6 +78,7 @@ For EasyOCR the requisites are higher, and you need a more updated Python versio
 I think EasyOCR cannot replace the simple features of Tesseract, especially because the output is a nested detailed list with 3 items (bounding box, the text detected and confident level) and I don’t know how to obtain a simple text that maintains the original line division of the document. So I tried EasyOCR to obtain new outputs:
 
 - 7C easyocr_images: from every preprocessed image, we obtain as output a different image with OCRed text annotated. Based on different confidence levels, It is possible to diffently color the annotated text for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
+- 7E easyocr_texts: is the EasyOCR version of Tesseract's 7A
 
 ## Postprocessing
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
