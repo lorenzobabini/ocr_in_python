@@ -79,6 +79,8 @@ I think EasyOCR cannot replace the simple features of Tesseract, especially beca
 
 - 7C easyocr_images: from every preprocessed image, we obtain as output a different image with OCRed text annotated. Based on different confidence levels, It is possible to diffently color the annotated text for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
 - 7E easyocr_texts: is the EasyOCR version of Tesseract's 7A
+  
+![easyocr](https://github.com/user-attachments/assets/93ae6e47-d97c-4038-bf6c-017aa4fdfb8f)
 
 ## Postprocessing
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
