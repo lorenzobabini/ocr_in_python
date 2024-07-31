@@ -3,7 +3,13 @@ Optical Character Recognition using Pytesseract or EasyOCR, along with preproces
 
 Most tips and techniques are taken from [Constellate notebooks](https://github.com/ithaka/constellate-notebooks/tree/master/OCR) by Ithaka. For further informations see them!
 
-## Workflow
+# Table of Contents
+1. [Workflow](#workflow)
+2. [Requirements](#requirements)
+3. [Third Example](#third-example)
+4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+
+## Workflow <a name="workflow"></a>
 Here, all the steps of an hypothetic project workflow of OCRing an entire multi-page book are covered.
 
 ![workflow](https://github.com/user-attachments/assets/eefd7b20-6f18-4122-a7e9-a0cb7f5bcba0)
@@ -12,7 +18,7 @@ The example I used is a rare Italian book from the 1950s which I have OCR'ed for
 
 For the last step, text analysis, see my [Python script for text analysis](https://github.com/lorenzobabini/python-script-for-text-analysis)
 
-## Requirements
+## Requirements <a name="requirements"></a>
 The project is created using **Python 3.7**.
 
 The software used are\
