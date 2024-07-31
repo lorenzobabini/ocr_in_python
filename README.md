@@ -93,5 +93,5 @@ The output is spellcheker_data.csv in the ouput folder.
 - converting all the scripts into object oriented program
 
 ## Acknowledgments
-Thank you to Nathan Kelber from Ithaka for teaching me so many things.
+Thank you to Nathan Kelber from Ithaka for teaching me so many things. Many of these scripts are inspired by his courses.\
 Thank you to my colleague Deborah Grbac for the projects followed together.
