@@ -6,8 +6,9 @@ Most tips and techniques are taken from [Constellate notebooks](https://github.c
 # Table of Contents
 1. [Workflow](#workflow)
 2. [Requirements](#requirements)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+3. [Preprocessing](#preprocessing)
+4. [OCR processsing](#ocrprocessing)
+5. [Postprocessing](#postprocessing)
 
 ## Workflow <a name="workflow"></a>
 Here, all the steps of an hypothetic project workflow of OCRing an entire multi-page book are covered.
@@ -43,7 +44,7 @@ pytesseract (0.3.9)
 pandas (1.3.5)\
 regex (2022.4.24)
 
-## Preprocessing
+## Preprocessing <a name="preprocessing"></a>
 The first five scripts are preprocessing steps that can be individually executed:
 
 #### 1. Converting a multipage pdf in multiple images
@@ -73,7 +74,7 @@ Not only denoising, but contrast and brightness adjustments too. This step could
 ![denoising](https://github.com/user-attachments/assets/6ea0a1c8-79d4-4581-8173-42a941f4155e)
 
 
-## OCR processing
+## OCR processing <a name="ocrprocessing"></a>
 
 Here are different ways to OCR the preprocessed images. In 7A, 7B & 7C code I use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in the output format:
 - 7A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain **a different text file for each page** of the scanned book. See the "texts" folder in the "output" folder. These multiple outputs will be very helpful for postprocessing tasks;
@@ -90,7 +91,7 @@ In this way, a human reviewers can easily and quicly detect and correct the erro
   
 ![easyocr](https://github.com/user-attachments/assets/93ae6e47-d97c-4038-bf6c-017aa4fdfb8f)
 
-## Postprocessing
+## Postprocessing <a name="postprocessing"></a>
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
 
 The output is spellcheker_data.csv in the ouput folder.
