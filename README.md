@@ -10,7 +10,7 @@ All the steps of an hypothetic project workflow of OCRing an entire multi-page b
 
 The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book.
 
-For the last step, text analysis, see my [Python script for text analysis] (https://github.com/lorenzobabini/python-script-for-text-analysis)
+For the last step, text analysis, see my [Python script for text analysis](https://github.com/lorenzobabini/python-script-for-text-analysis)
 
 ## Requirements
 The project is created using **Python 3.7**.
