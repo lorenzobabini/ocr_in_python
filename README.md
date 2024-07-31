@@ -75,7 +75,7 @@ Here are different ways to OCR the preprocessed images. In 7A, 7B & 7C code I us
 - 7C is similar to 7B but with an advantage: the **single text file with page subdivions** marked in the text, to help human reviewers make corrections. See file_paginated.txt in the output folder
 
 In 7D and 7E I have tried EasyOCR 1.7.1 (Attention: the requisites are higher, and you need a more updated Python version. There could be some issues beacuse of PyTorch)
- **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and a much detailed output: a nested list with 3 main items (bounding box, text detected and confident level), but I don’t know how to obtain a simple text that maintains the original line division of the document and how to avoid some mistakes in word order.
+ **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and a much detailed output: a nested list with 3 main items (bounding box, text detected and confident level), but I don’t know how to obtain a simple text that maintains the original line division of the document and how to avoid some mistakes in word order. For more details see this [Medium article](https://medium.com/@adityamahajan.work/easyocr-a-comprehensive-guide-5ff1cb850168)
 
 - 7C easyocr_images: the output is an **image with OCRed text annotated for each preprocessed page**. Based on different confidence levels, It is possible to diffently color the annotated text (for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
 - 7E easyocr_texts: is the EasyOCR version of Tesseract's 7A
