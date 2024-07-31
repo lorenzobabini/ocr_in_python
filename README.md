@@ -69,18 +69,17 @@ Not only denoising, but contrast and brightness adjustments too. This step could
 
 ## OCR processing
 
-Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in output format.
-- 7A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain a different text file for each page of the scanned book. See the "texts" folder in the "output" folder. These multiple outputs will be very helpful for postprocessing tasks;
-- 7B is the most simple way to obtain a single output: a single text file from the whole scanned book withouth subdivions. See file.txt in the output folder;
-- 7C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections. See file_paginated.txt in the output folder
+Here are different ways to OCR the preprocessed images. In 7A, 7B & 7C code I use PyTesseract, the Python library to manage **Tesseract**. These scripts differ only in the output format:
+- 7A is the most correct way: from every preprocessed image, we obtain as output a different text file, that it means that we obtain **a different text file for each page** of the scanned book. See the "texts" folder in the "output" folder. These multiple outputs will be very helpful for postprocessing tasks;
+- 7B is the most simple way to obtain a single output: **a single text file** from the whole scanned book withouth subdivions. See file.txt in the output folder;
+- 7C is similar to 7B but with an advantage: the **single text file with page subdivions** marked in the text, to help human reviewers make corrections. See file_paginated.txt in the output folder
 
-Since **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and much detailed outputs, I tried to use it instead of the more traditional Tesseract.
-For EasyOCR (1.7.1) the requisites are higher, and you need a more updated Python version. There could be some issues beacuse of PyTorch.
+In 7D and 7E I have tried EasyOCR 1.7.1 (Attention: the requisites are higher, and you need a more updated Python version. There could be some issues beacuse of PyTorch)
+ **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and a much detailed output: a nested list with 3 main items (bounding box, text detected and confident level), but I don’t know how to obtain a simple text that maintains the original line division of the document and how to avoid some mistakes in word order.
 
-I think EasyOCR cannot replace the simple features of Tesseract, especially because the output is a nested detailed list with 3 items (bounding box, the text detected and confident level) and I don’t know how to obtain a simple text that maintains the original line division of the document. So I tried EasyOCR to obtain new outputs:
-
-- 7C easyocr_images: from every preprocessed image, we obtain as output a different image with OCRed text annotated. Based on different confidence levels, It is possible to diffently color the annotated text for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
+- 7C easyocr_images: the output is an **image with OCRed text annotated for each preprocessed page**. Based on different confidence levels, It is possible to diffently color the annotated text (for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
 - 7E easyocr_texts: is the EasyOCR version of Tesseract's 7A
+In this way, a human reviewers can easily and quicly detect and correct the errors:
   
 ![easyocr](https://github.com/user-attachments/assets/93ae6e47-d97c-4038-bf6c-017aa4fdfb8f)
 
