@@ -58,7 +58,7 @@ This techniques must be personalized, identifying the correct pixel measurements
 #### 5. Rotation
 Automatic rotation of pages based on an automatic measurements. If an image is not askew, it is not rotated.
 
-![rotated](https://github.com/user-attachments/assets/2de8e10a-8054-4bb6-ba13-9f275f150f72)
+![rotated](https://github.com/user-attachments/assets/c357ffa6-63f6-4e48-ba52-d27da9f020aa)
 
 #### 6. Noise canceling
 
