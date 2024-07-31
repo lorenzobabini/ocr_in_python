@@ -8,7 +8,9 @@ All the steps of an hypothetic project workflow of OCRing an entire multi-page b
 
 ![workflow](https://github.com/user-attachments/assets/eefd7b20-6f18-4122-a7e9-a0cb7f5bcba0)
 
-The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book
+The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book.
+
+For the last step, text analysis, see my [Python script for text analysis] (https://github.com/lorenzobabini/python-script-for-text-analysis.git)
 
 ## Requirements
 The project is created using **Python 3.7**.
