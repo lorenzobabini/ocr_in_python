@@ -79,6 +79,7 @@ In 7D and 7E I have tried EasyOCR 1.7.1 (Attention: the requisites are higher, a
 
 - 7C easyocr_images: the output is an **image with OCRed text annotated for each preprocessed page**. Based on different confidence levels, It is possible to diffently color the annotated text (for example: green if codidence > 0.8, yellow if <0.8 and > 0.5, red if < 0.5)
 - 7E easyocr_texts: is the EasyOCR version of Tesseract's 7A
+
 In this way, a human reviewers can easily and quicly detect and correct the errors:
   
 ![easyocr](https://github.com/user-attachments/assets/93ae6e47-d97c-4038-bf6c-017aa4fdfb8f)
