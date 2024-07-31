@@ -1,14 +1,14 @@
 # OCR in Python
-Optical Character Recognition using Pytesseract or EasyOCR, along with preprocessing and postprocessing techniques. Following and adapting these scripts you can build an OCR workflow for your projects.
+Optical Character Recognition using Pytesseract or EasyOCR, along with preprocessing and postprocessing techniques. Following and adapting these scripts, an OCR workflow can be built for your projects..
 
 Most tips and techniques are taken from [Constellate notebooks](https://github.com/ithaka/constellate-notebooks/tree/master/OCR) by Ithaka. For further informations see them!
 
 ## Workflow
-All the steps of an hypothetic project workflow of OCRing an entire multi-page book are here covered.
+Here, all the steps of an hypothetic project workflow of OCRing an entire multi-page book are covered.
 
 ![workflow](https://github.com/user-attachments/assets/eefd7b20-6f18-4122-a7e9-a0cb7f5bcba0)
 
-The example I used is a rare Italian book from the 1950s I have OCR'ed for a friend. So, spellcheker for postprocessing is based on italian language. The book is missing a couple of pages. This is why the page count in the OCR'ed file texts does not totally correspond to the page numbering of the book.
+The example I used is a rare Italian book from the 1950s which I have OCR'ed for a friend.Thus, spellcheker for postprocessing is based on Italian language. The book has a missing couple of pages. This is why the page count in the OCR’ed file texts does not totally correspond to the page numbering of the book.
 
 For the last step, text analysis, see my [Python script for text analysis](https://github.com/lorenzobabini/python-script-for-text-analysis)
 
@@ -38,7 +38,7 @@ pandas (1.3.5)\
 regex (2022.4.24)
 
 ## Preprocessing
-The first five scripts are preprocessing steps that can be individually run:
+The first five scripts are preprocessing steps that can be individually executed:
 
 #### 1. Converting a multipage pdf in multiple images
 
@@ -75,7 +75,7 @@ Here are different ways to OCR the preprocessed images. In 6A, 6B & 6C code we u
 - 7C is similar to 6B but with an advantage: the single text file that we obtained has page subdivions, to help human reviewers make corrections. See file_paginated.txt in the output folder
 
 Since **EasyOCR** is a newer library that offers great development potential and great features, such as multilingual recognition and much detailed outputs, I tried to use it instead of the more traditional Tesseract.
-For EasyOCR the requisites are higher, and you need a more updated Python version. There could be some issues beacuse of PyTorch.
+For EasyOCR (1.7.1) the requisites are higher, and you need a more updated Python version. There could be some issues beacuse of PyTorch.
 
 I think EasyOCR cannot replace the simple features of Tesseract, especially because the output is a nested detailed list with 3 items (bounding box, the text detected and confident level) and I don’t know how to obtain a simple text that maintains the original line division of the document. So I tried EasyOCR to obtain new outputs:
 
