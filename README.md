@@ -88,3 +88,10 @@ In this way, a human reviewers can easily and quicly detect and correct the erro
 The main postprocessing technique is spellcheking, to detect transciption errors in OCRed text. Since there are not many good libraries for Italian spellchecking, here this task is performed using glossaries: OCRed words not included in our Italian glossaries are reported as errors. The Italian glossaries I use are build by me grouping various sources.
 
 The output is spellcheker_data.csv in the ouput folder.
+
+## Further improvements
+- converting all the scripts into object oriented program
+
+### Acknowledgments
+Thank you to Nathan Kelber from Ithaka for teaching me so many things.
+Thank you to my colleague Deborah Grbac for the projects followed together.
